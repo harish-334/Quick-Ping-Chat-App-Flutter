@@ -16,7 +16,7 @@ class _AIChatbotScreenState extends State<AIChatbotScreen> {
   bool isLoading = false;
 
   final String apiKey =
-      "AIzaSyDmKLHfC8jAFI0RvJT2tZSjr6QxnqVA2Ic"; // 🔐 Secure your API key
+      "your_api"; // 🔐 Secure your API key
   final String apiUrl =
       "https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=";
 
