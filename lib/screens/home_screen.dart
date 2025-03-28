@@ -8,7 +8,7 @@ import 'package:quick_ping/main.dart';
 import 'package:quick_ping/models/chat_user.dart';
 import 'package:quick_ping/screens/auth/login_screen.dart';
 import 'package:quick_ping/screens/profile_screen.dart';
-import 'package:quick_ping/screens/contactus_screen.dart';
+import 'package:quick_ping/screens/contact_screen.dart';
 import 'package:quick_ping/widgets/chat_user_card.dart';
 import 'package:google_sign_in/google_sign_in.dart';
 
@@ -28,7 +28,9 @@ class _HomeScreenState extends State<HomeScreen> {
   void initState() {
     super.initState();
     // Fetch user information when the screen is loaded
-    APIs.getSelfInfo();
+    if (APIs.auth.currentUser != null) {
+      APIs.getSelfInfo();
+    }
   }
 
   @override
@@ -165,17 +167,22 @@ class _HomeScreenState extends State<HomeScreen> {
                   leading: Icon(Icons.logout_rounded),
                   title: Text('Logout'),
                   onTap: () async {
-                    Dialogs.showProgressBar(context);
-                    await APIs.auth.signOut().then((value) async {
-                      await GoogleSignIn().signOut().then((value) {
-                        //for hiding progress bar
-                        Navigator.pop(context);
-                        //to remove homescreen
-                        Navigator.pop(context);
-                        Navigator.pushReplacement(context,
-                            MaterialPageRoute(builder: (_) => LoginScreen()));
+                    // Check if the user is authenticated before proceeding
+                    if (APIs.auth.currentUser != null) {
+                      Dialogs.showProgressBar(context);
+                      await APIs.auth.signOut().then((value) async {
+                        await GoogleSignIn().signOut().then((value) {
+                          // Hide progress bar
+                          Navigator.pop(context);
+                          // Navigate to login screen after logging out
+                          Navigator.pushReplacement(context,
+                              MaterialPageRoute(builder: (_) => LoginScreen()));
+                        });
                       });
-                    });
+                    } else {
+                      Dialogs.showSnackbar(
+                          context, 'User is already logged out!');
+                    }
                   },
                 ),
               ],
