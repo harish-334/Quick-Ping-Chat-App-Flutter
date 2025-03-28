@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "1003940301634",
+    "project_id": "quickping-abc7b",
+    "storage_bucket": "quickping-abc7b.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1003940301634:android:7151eb03b6cc5d019656db",
+        "android_client_info": {
+          "package_name": "com.harish.quick_ping"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1003940301634-4bjqecgig9gkagedggrc5cf71r2a8t4f.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.harish.quick_ping",
+            "certificate_hash": "69bafa15327f00bda0b752327c6b1c58e8162a73"
+          }
+        },
+        {
+          "client_id": "1003940301634-ibdhhm2isdncve84l36lp09k13u31t80.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBglhhRYsdsy1n464GlCulBl41tnrGd-BU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1003940301634-ibdhhm2isdncve84l36lp09k13u31t80.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1003940301634-sd910mj0i7apc4qmdknf2lq5cerm0u4o.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.harish.quickPing"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
