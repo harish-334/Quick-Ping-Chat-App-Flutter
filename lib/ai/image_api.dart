@@ -5,7 +5,7 @@ import 'package:http/http.dart' as http;
 class imgapi {
   static Future<Uint8List?> HandlePrompt(p) async {
     var header = {
-      'Authorization': 'Bearer vk-TcVen3b7kswSDJFY79JUo48PPGfmS0YgMZuM7G6wdwFV3'
+      'Authorization': 'Bearer your_api'
     };
     var request = http.MultipartRequest(
         'POST', Uri.parse('https://api.vyro.ai/v2/image/generations'));
