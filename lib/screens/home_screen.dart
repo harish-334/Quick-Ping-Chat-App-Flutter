@@ -8,7 +8,7 @@ import 'package:quick_ping/main.dart';
 import 'package:quick_ping/models/chat_user.dart';
 import 'package:quick_ping/screens/auth/login_screen.dart';
 import 'package:quick_ping/screens/profile_screen.dart';
-import 'package:quick_ping/screens/contact_screen.dart';
+import 'package:quick_ping/screens/contactus_screen.dart';
 import 'package:quick_ping/widgets/chat_user_card.dart';
 import 'package:google_sign_in/google_sign_in.dart';
 
