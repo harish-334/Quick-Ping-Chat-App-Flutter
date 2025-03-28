@@ -1,16 +1,35 @@
-# quick_ping
+# Quick Ping - Real-Time Chat Application
 
-A new Flutter project.
+Quick Ping is a simple, feature-rich, and interactive chat application built with **Flutter**. It offers real-time messaging, Google Sign-In, and AI-powered features like chatbots, translation, and image generation. Chat with your friends, explore AI tools, and enjoy seamless communication.
 
-## Getting Started
+📸 **Screenshots**:
+Experience the clean and interactive design of Quick Ping!
+![Screenshot_1743162564](https://github.com/user-attachments/assets/a878d95b-1e9f-4768-89bc-cec1b8c24667)
+![Screenshot_1743162936](https://github.com/user-attachments/assets/c2190f43-a640-4556-84eb-d94f58cf0735)
 
-This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+✨ **Features**:
+- Real-time messaging with **Firebase**.
+- **Google Sign-In** for easy login.
+- Add users by email ID and manage your contacts.
+- Chat interface with **text, emojis**, and real-time updates.
+- **Profile Management** (photo, name, about, and last-seen).
+- **Message Status**: Delivered and read indicators.
+- Edit or delete your messages at any time.
+- **Push Notifications** for new messages.
+- **AI Chatbot** integration powered by **Gemini Flash 1.5**.
+- Language **translation** support (English, Hindi, Gujarati, etc.).
+- **AI Image Generator** to create images from text prompts.
+- Sleek **UI** with Material Widgets.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+🧠 **AI Chatbot Setup**:
+To use the Gemini AI Chatbot, provide your own API key. You can generate it from [Google AI Studio](https://console.cloud.google.com/).
+
+💬 **Feedback & Suggestions**:
+Feel free to reach out for any feedback or suggestions:
+📧 [harishsondagar3@gmail.com](mailto:harishsondagar3@gmail.com)
+
+🏷️ **Keywords**:
+Flutter Chat App, Firebase Messaging, Google Sign-In, AI Chatbot in Flutter, Cross-Platform Chat, Real-Time Messaging, Material Design, AI Features in Apps
+
